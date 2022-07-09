@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #cont{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows:auto;
+      gap: 10px;
+    }
+    #cont>div{
+      margin: auto;
+      padding: 20px;
+    }
+    #cont>div>img{
+      display: block;
+      margin: auto;
+    }
+  #head{
+    display: flex;
+    align-items: center;
+
+  }
+  #head>h1, #head>h2, #head>h3{
+    margin-right: 10px;
+  }
+  #head>h2{
+    color: green;
+  }
+  #head>h3{
+    color: gray;
+    text-decoration-line: line-through;
+  }
+  #cont>div>h2+h2{
+    color: gray;
+  }
+
+  </style>
+</head>
+<body>
+  <div id="cont">
+    <div>
+      <img src="https://m.media-amazon.com/images/I/4194zlfjN3L._AC_UL480_FMwebp_QL65_.jpg"/>
+      <h2>Pause</h2>
+      <h2>Men's cotton Long Sleeves Shrug</h2>
+
+      <div id="head">
+        <h1>₹300</h1>
+        <h3>₹1499</h3>
+        <h2>-76%</h2>
+      </div>
+    </div>
+
+    <div>
+      <img src="https://m.media-amazon.com/images/I/71p1dTewFmL._AC_UL480_FMwebp_QL65_.jpg"/>
+      <h2>JUBINATION</h2>
+      <h2>Men Wollen Sleeveless Sweater Pack of 1</h2>
+
+      <div id="head">
+        <h1>₹300</h1>
+        <h3>₹1499</h3>
+        <h2>-76%</h2>
+      </div>
+    </div>
+
+  </div>
+  
+</body>
+</html>
